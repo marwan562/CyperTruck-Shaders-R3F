@@ -58,27 +58,68 @@ export const Experience = () => {
       0
     );
 
-    tl.current.to(square.current.position, {
-      duration: 2,
-      y:-1.35
-    },0);
+    tl.current.to(
+      square.current.position,
+      {
+        duration: 2,
+        y: -1.35,
+      },
+      0
+    );
 
-    tl.current.to(square.current.rotation, {
-      duration: 1,
-      z: Math.PI * 2,
-    },0);
+    tl.current.to(
+      square.current.rotation,
+      {
+        duration: 1,
+        z: Math.PI * 2,
+      },
+      0
+    );
     tl.current.to(
       square.current.position,
       {
         duration: 0.5,
         z: -6,
-        x:8
-      
+        x: 8,
       },
       1.5
     );
     tl.current.to(
       square.current.rotation,
+      {
+        duration: 2,
+        z: Math.PI / 3,
+      },
+      1.8
+    );
+
+    tl.current.to(
+      triangle.current.position,
+      {
+        duration: 2,
+        y: -1.35,
+      },
+      0
+    );
+
+    tl.current.to(
+      triangle.current.rotation,
+      {
+        duration: 1,
+        z: Math.PI * 2,
+      },
+      0
+    );
+    tl.current.to(
+      triangle.current.position,
+      {
+        duration: 0.5,
+        x: -6,
+      },
+      1.5
+    );
+    tl.current.to(
+      triangle.current.rotation,
       {
         duration: 2,
         z: Math.PI / 3,
